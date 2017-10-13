@@ -9,7 +9,6 @@ MainLoop::MainLoop(SDL_Renderer* renderer, Textures* textures)
 
 void MainLoop::loop()
 {
-//    SDL_Event event;
 
     int startNewGameType = MENU;
 
