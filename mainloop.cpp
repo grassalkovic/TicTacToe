@@ -19,13 +19,6 @@ void MainLoop::loop()
 
         handleEvent();
 
-//        //Events
-//        while ( SDL_PollEvent( &event ) )
-//        {
-//            exitGameLoop(event);
-//            MyGame->handleEvent( event );
-//        }
-
         startNewGameType = MyGame->changeGame(/*event*/);
         if(startNewGameType == QUIT)
         {
