@@ -4,10 +4,10 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_render.h>
 
-class SDLInitialization
+class SDLEngine
 {
 public:
-    SDLInitialization();
+    SDLEngine();
     void initSDL();
     void closeSDL();
     SDL_Window* getWindow();

@@ -14,12 +14,11 @@ void MainLoop::loop()
 
     while( !quit )
     {
-        initGameType( /*startNewGameType*/ );
-
+        initGameType();
 
         handleEvent();
 
-        startNewGameType = MyGame->changeGame(/*event*/);
+        startNewGameType = MyGame->changeGame();
         if(startNewGameType == QUIT)
         {
             quit = true;
@@ -32,7 +31,7 @@ void MainLoop::loop()
         }
 
         //Logic
-        MyGame->placeTextures(/*event*/);
+        MyGame->placeTextures();
 
         //Rendering
         renderGrid();
